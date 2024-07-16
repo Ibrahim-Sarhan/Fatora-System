@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invoice</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="vh-100 d-flex justify-content-center ">
+
+    <aside class="col-lg-4 p-5">
+        <form action="" id="productForm"  class="form m-auto mt-5 d-flex flex-column gap-4">
+            <input type="text" id="newItem" class="form-control" placeholder="Product name" required>
+            <input type="number" id="price" class="form-control" placeholder="Price" required>
+            <input type="number" id="qty" class="form-control" placeholder="Qty" required>
+            <button onclick="getProducts()" class="btn btn-info">Add Item</button>
+        </form>
+    
+    </aside>
+
+    <section class="invoice-container col-lg-8 p-4 ">
+        <div class="invoice">
+            <div class="invoice__header">
+                <div class="invoice-title">
+                    <img src="./imgs/7176657.png" alt="">
+                    <span class="fw-bold fs-3">Invoice</span>
+                </div>
+                <div class="logo">
+                    <img src="./imgs/logo.png" alt="">
+                    <p>Company</p>
+                </div>
+            </div>
+            
+            <table class="table" id="productsTable">
+                <thead>
+                    <tr>
+                        <th class="bg-info">Item ID</th>
+                        <th class="bg-info">Item Description</th>
+                        <th class="bg-info">Unit Price</th>
+                        <th class="bg-info">Qty</th>
+                        <th class="bg-info">Total Price</th>
+                        <th class="bg-info">Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <hr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    
+    <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.bundle.min.js.map"></script>
+     <script src="./code.js"></script>
+
+</body>
+</html>

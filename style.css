@@ -1,0 +1,40 @@
+:root {
+    --color-bg-input: #f6f7fb;
+    --color-bg-body: #e7eef8;
+    --color-bg-white: #fff;
+    /* --color-bg-body: #aed3fc; */
+    --color-text-header: #0074fd;
+}
+
+body {
+    background-color: var(--color-bg-body);
+}
+
+.invoice-container {
+    background-color: var(--color-bg-white);
+    border-radius: 0.75rem;
+    box-shadow: 1px 2px 3px #000;
+}
+.invoice-container .invoice__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14px;
+}
+.invoice-container .logo p {
+    color: var(--color-text-header);
+    margin: 0;
+    font-size: 12px;
+}
+.invoice-container img {
+    height: 50px;
+}
+
+#productsTable .edit-btn img {
+    height: 20px;
+}
+
+#productsTable .edit-btn {
+    border: 1px solid var(--color-text-header);
+    border-radius: 7px;
+}
